@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jee Mart</string>
+
+    <string name="Heading1">SuperFast Delivery</string>
+    <string name="Heading2">Online Groceries</string>
+    <string name="Heading3">Trusted Retailers</string>
+    <string name="Heading4">Omni Channel</string>
+</resources>

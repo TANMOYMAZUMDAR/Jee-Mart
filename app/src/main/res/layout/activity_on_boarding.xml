@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9ffab"
+    tools:context=".OnBoarding">
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        android:background="@color/ColorPrimary">
+
+    </View>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <Button
+        android:id="@+id/skip_btn"
+        android:onClick="skip"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/ic_baseline_double_arrow_24"
+        android:drawableRight="@drawable/ic_baseline_double_arrow_24"
+        android:text="skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="395dp"
+        android:layout_marginEnd="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave" />
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginBottom="155dp"
+        android:text="GET STARTED"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="20dp" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="next"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+            android:paddingBottom="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:scaleType="centerCrop"
+            android:background="#00000000"
+            android:foregroundGravity="center"
+            android:src="@drawable/transparant_splashscreen"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
